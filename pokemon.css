@@ -1,0 +1,102 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    background-color: #242323;
+}
+
+.container {
+    width: 350px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+#card{
+    background: radial-gradient(circle at 50% 0%, orange 43%, #ffffff 30%);
+    width: 100%;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+#card img{
+    display: block;
+    width: 180px;
+    max-height: 200px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.hp{
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+}
+
+.pokeName{
+    text-align: center;
+    font-weight: 600;
+}
+
+.types{
+    display: flex;
+    justify-content: space-between;
+    margin:  20px 0 40px 0;
+}
+
+.hp span, .types span{
+    font-size: 12px;
+    letter-spacing: 0,4px;
+    font-weight: 600;
+}
+
+.types span{ 
+    padding: 5px 20px ;
+    border-radius: 5px;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stats p{
+    color:#404060;
+}
+
+#button{
+    display: block;
+    padding: 15px 60px;
+    font-size:18px;
+    background-color: #404060;
+    color: #ffffff;
+    position: relative;
+    margin:  30px auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #8383e0;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+button:hover:after{
+    background-color: #8f8fbd;
+    
+}
